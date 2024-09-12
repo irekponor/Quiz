@@ -155,4 +155,21 @@ const data = [
     d: "Federal Polytechnic Ado-Ekiti",
     correct: "a",
   },
+  {
+    question:
+      "Which one of these programming languages is best used to connect to a database?",
+    a: "C#",
+    b: "HTML",
+    c: "SQL",
+    d: "Laravel",
+    correct: "c",
+  },
+  {
+    question: "What is Emmanuel's yoruba name. lol?",
+    a: "Oluwafisayomi",
+    b: "Ayomide",
+    c: "Olajide",
+    d: "Babatunde",
+    correct: "c",
+  },
 ];
