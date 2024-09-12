@@ -218,7 +218,7 @@ function getSelect() {
 }
 
 submitBtn.addEventListener("click", () => {
-  const answer = getSelected();
+  const answer = getSelect();
 
   if (answer) {
     if (answer === data[currentQuiz].correct) {
@@ -230,9 +230,8 @@ submitBtn.addEventListener("click", () => {
     if (currentQuiz < data.length) {
       loadQuiz();
     } else {
-      quiz.innerHTML = `
-        
-      <h2>You Answered ${score}/${data.lenght} Questions Correctly</h2>
+      quiz.innerHTML = `     
+      <h2>You Answered ${score}/${data.length} Questions Correctly</h2>
 
     <button onclick="location.reload()">Restart</button>
     `;
