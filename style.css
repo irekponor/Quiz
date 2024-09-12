@@ -2,4 +2,7 @@ body{
     background: #ffa500;
     font-family: "poppins", cursive;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
