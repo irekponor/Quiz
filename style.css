@@ -44,4 +44,5 @@ button{
     display: block;
     width: 100%;
     cursor: pointer;
+    padding: 1.1rem;
 }
