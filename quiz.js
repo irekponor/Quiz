@@ -204,3 +204,38 @@ function loadQuiz() {
 function deselectAnswers() {
   answerEls.forEach((answerEl) => (answerEl.checked = false));
 }
+
+function getSelect() {
+  let answer;
+
+  answerEls.forEach((answerEl) => {
+    if (answerEl.checked) {
+      answer = answerEl.id;
+    }
+  });
+
+  return answer;
+}
+
+submitBtn.addEventListener("click", () => {
+  const answer = getSelected();
+
+  if (answer) {
+    if (answer === data[currentQuiz].correct) {
+      score++;
+    }
+
+    currentQuiz++
+
+    if(currentQuiz < data.length){
+        loadQuiz()
+    }
+
+    else{
+        quiz.innerHTML = '
+        h2
+        
+        '
+    }
+  }
+});
