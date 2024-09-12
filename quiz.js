@@ -161,7 +161,7 @@ const data = [
     b: "Ayomide",
     c: "Olajide",
     d: "Babatunde",
-    correct: "c",
+    correct: "a",
   },
 ];
 
