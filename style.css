@@ -46,3 +46,60 @@ button{
     cursor: pointer;
     padding: 1.1rem;
 }
+
+.quiz-results h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .quiz-results h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .quiz-results ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .quiz-results li {
+    margin-bottom: 10px;
+  }
+  
+  .quiz-results li br {
+    display: none; /* hide line breaks on small screens */
+  }
+  
+  .restart-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Media queries for responsiveness */
+  
+  @media (max-width: 768px) {
+    .quiz-results {
+      margin: 20px;
+      padding: 10px;
+    }
+    .quiz-results h3 {
+      font-size: 18px;
+    }
+    .quiz-results h5 {
+      font-size: 14px;
+    }
+    .restart-btn {
+      padding: 5px 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .quiz-results li br {
+      display: block; /* show line breaks on small screens */
+    }
+  }

@@ -232,7 +232,8 @@ submitBtn.addEventListener("click", () => {
       loadQuiz();
     } else {
       quiz.innerHTML = `
-      <h2>You Answered ${score}/${data.length} Questions Correctly</h2>
+      <div class="quiz-results">
+      <h3>You Answered ${score}/${data.length} Questions Correctly</h3>
       <h5>Questions You Failed:
         ${failedQuestions
           .map(
@@ -246,6 +247,7 @@ submitBtn.addEventListener("click", () => {
           )
           .join("")}
           </h5>
+          </div>
       <button onclick="location.reload()">Restart</button>
     `;
     }
