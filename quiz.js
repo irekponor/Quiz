@@ -183,3 +183,24 @@ const optionC = document.getElementById("optionC");
 const optionD = document.getElementById("optionD");
 
 const submitBtn = document.getElementById("submit");
+
+let currentQuiz = 0;
+let score = 0;
+
+loadQuiz();
+
+function loadQuiz() {
+  deselectAnswers();
+
+  const currentQuizData = data[currentQuiz];
+
+  questionEl.innerText = currentQuizData.question;
+  optionA.innerText = currentQuizData.a;
+  optionB.innerText = currentQuizData.b;
+  optionC.innerText = currentQuizData.c;
+  optionD.innerText = currentQuizData.d;
+}
+
+function deselectAnswers() {
+  answerEls.forEach((answerEl) => (answerEl.checked = false));
+}
