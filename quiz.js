@@ -228,10 +228,23 @@ submitBtn.addEventListener("click", () => {
     if (currentQuiz < data.length) {
       loadQuiz();
     } else {
-      quiz.innerHTML = `     
+      quiz.innerHTML = `
       <h2>You Answered ${score}/${data.length} Questions Correctly</h2>
-
-    <button onclick="location.reload()">Restart</button>
+      <h3>Questions You Failed:</h3>
+      <ul>
+        ${failedQuestions
+          .map(
+            (question, index) => `
+          <li>
+            Question ${index + 1}: ${question.question} <br>
+            Your Answer: ${question.userAnswer} <br>
+            Correct Answer: ${question.correctAnswer}
+          </li>
+        `
+          )
+          .join("")}
+      </ul>
+      <button onclick="location.reload()">Restart</button>
     `;
     }
   }
