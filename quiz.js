@@ -225,17 +225,16 @@ submitBtn.addEventListener("click", () => {
       score++;
     }
 
-    currentQuiz++
+    currentQuiz++;
 
-    if(currentQuiz < data.length){
-        loadQuiz()
-    }
+    if (currentQuiz < data.length) {
+      loadQuiz();
+    } else {
+      quiz.innerHTML = `
+      <h2>You Answered ${score}/${data.lenght} Questions Correctly</h2>
 
-    else{
-        quiz.innerHTML = '
-        h2
-        
-        '
+    <button onclick="location.reload()">Restart</button>
+    `;
     }
   }
 });
