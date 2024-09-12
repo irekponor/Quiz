@@ -15,20 +15,27 @@
 </head>
 <body>
     
-    <div class="container">
-        <div id="quiz">
-            <div id="qa">Question 1 of 15</div>
-            <div id="question">Question Text</div>
-            <div class="options">
-                <button class="option">Option 1</button>
-                <button class="option">Option 2</button>
-                <button class="option">Option 3</button>
-                <button class="option">Option 4</button>
-            </div>
-            <div class="footer">
-                <span id="timer">Time Left: 10s</span>
-                <button id="next-btn">Next</button>
-            </div>
+    <div class="container" id="quiz">
+        <div id="quiz-header">
+         <h2 id="question">MCQS text</h2>
+         <ul>
+            <li>
+                <input type="radio" class="answer" name="answer" id="a">
+                <label for="a" id="optionA">Option A</label>
+            </li>
+            <li>
+                <input type="radio" class="answer" name="answer" id="b">
+                <label for="b" id="optionB">Option B</label>
+            </li>
+            <li>
+                <input type="radio" class="answer" name="answer" id="c">
+                <label for="c" id="optionC">Option C</label>
+            </li>
+            <li>
+                <input type="radio" class="answer" name="answer" id="d">
+                <label for="d" id="optionD">Option D</label>
+            </li>
+         </ul>
         </div>
     </div>
 </body>
