@@ -1,8 +1,18 @@
 body{
-    background: #ffa500;
+    background: #87ceeb;
     font-family: "poppins", cursive;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    height: 90vh;
+}
+
+.container{
+    background: #f5f5f5;
+    box-shadow: 0 0 10px 2px;
+    width: 600px;
+}
+
+#quiz-header{
+    paddings\
 }
