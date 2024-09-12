@@ -4,7 +4,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
 }
 
 .container{
@@ -71,14 +71,6 @@ button{
     display: none; /* hide line breaks on small screens */
   }
   
-  .restart-btn {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
   
   /* Media queries for responsiveness */
   
@@ -91,10 +83,7 @@ button{
       font-size: 18px;
     }
     .quiz-results h5 {
-      font-size: 14px;
-    }
-    .restart-btn {
-      padding: 5px 10px;
+      font-size: 11px;
     }
   }
   
