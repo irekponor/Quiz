@@ -215,6 +215,12 @@ submitBtn.addEventListener("click", () => {
   if (answer) {
     if (answer === data[currentQuiz].correct) {
       score++;
+    } else {
+      failedQuestions.push({
+        question: data[currentQuiz].question,
+        correctAnswer: data[currentQuiz].correct,
+        userAnswer: answer,
+      });
     }
 
     currentQuiz++;
