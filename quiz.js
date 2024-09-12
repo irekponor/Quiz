@@ -16,15 +16,6 @@ const data = [
     correct: "a",
   },
   {
-    question:
-      "Who is the lead actor in the Nigerian movie 'The Wedding Party'?",
-    a: "RMD",
-    b: "Banky W",
-    c: "Adesua Etomi",
-    d: "Sola Sobowale",
-    correct: "b",
-  },
-  {
     question: "What is the name of Wizkid's debut album?",
     a: "Superstar",
     b: "Ayo",
@@ -165,7 +156,7 @@ const data = [
     correct: "c",
   },
   {
-    question: "What is Emmanuel's yoruba name. lol?",
+    question: "What is Emmanuel Irekponor's yoruba name. lol?",
     a: "Oluwafisayomi",
     b: "Ayomide",
     c: "Olajide",
