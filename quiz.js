@@ -24,7 +24,7 @@ const data = [
     correct: "a",
   },
   {
-    question: "4. Css is an type of ____ Language ?",
+    question: "4. Css is an type of ____ Language?",
     a: "Back-end",
     b: "ML",
     c: "Front-end",
@@ -33,7 +33,7 @@ const data = [
   },
   {
     question:
-      "5. Who is the host of the Nigerian TV show 'Who Wants to Be a Millionaire'?",
+      "5. Who is the host of the Nigerian TV show 'Who Wants to Be a Millionaire?",
     a: "Frank Edoho",
     b: "Ebuka Obi-Uchendu",
     c: "Ik Osakioduwa",
@@ -233,7 +233,7 @@ submitBtn.addEventListener("click", () => {
     } else {
       quiz.innerHTML = `
       <h2>You Answered ${score}/${data.length} Questions Correctly</h2>
-      <h3>Questions You Failed:
+      <h5>Questions You Failed:
         ${failedQuestions
           .map(
             (question, index) => `
@@ -245,7 +245,7 @@ submitBtn.addEventListener("click", () => {
         `
           )
           .join("")}
-          </h3>
+          </h5>
       <button onclick="location.reload()">Restart</button>
     `;
     }
